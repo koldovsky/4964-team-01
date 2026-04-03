@@ -4,3 +4,4 @@ https://koldovsky.github.io/online-shop-htmx/
 
 Vladyslav Tupikin
 Hubskyi Robert
+Oleksandr Sydorskyi
