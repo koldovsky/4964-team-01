@@ -6,3 +6,4 @@ https://koldovsky.github.io/online-shop-htmx/
 - Hubskyi Robert
 - Oleksandr Sydorskyi
 - Sofiia Hrebeniuk
+- Andrii Prymak
