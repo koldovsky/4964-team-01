@@ -19,11 +19,12 @@
     ></script>
   </head>
   <body>
-    <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="common.header.partial.html"></header>
+    <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="header.partial.html"></header>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="hero.partial.html"></section>
     <main data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.main.partial.html"></main>
+    
+    
     <div class="alert-container container"></div>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.product-info.partial.html"></div>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.cart.partial.html"></div>
     <script src="js/index.js"></script>
   </body>
 </html>
