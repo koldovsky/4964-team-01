@@ -1,4 +1,4 @@
-https://koldovsky.github.io/online-shop-htmx/
+https://koldovsky.github.io/4964-team-01
 
 # Team members
 
