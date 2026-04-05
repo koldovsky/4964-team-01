@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hidden Heaven</title>
 
-    <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hidden Heaven</title>
 
-  <body>
-    <header class="header">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="header.partial.html"
-      ></nav>
+  <script src="https://unpkg.com/htmx.org@1.9.10"
+    integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+    crossorigin="anonymous"></script>
+</head>
 
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="hero.partial.html"
-      ></section>
-    </header>
+<body>
+  <header class="header">
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="header.partial.html"></nav>
 
-    <main class="main">
-      <!-- Welcome / Mariia Belyn -->
-       <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.welcome.partial.html"
-      ></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="hero.partial.html"></section>
+  </header>
 
-      <!-- Anastasiia Boiko -->
-       <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.explore-canvas.partial.html"
-      ></section>
+  <main class="main">
+    <!-- Welcome / Mariia Belyn -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.welcome.partial.html"></section>
 
-      <!-- Andrii Prymak -->
-       <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.services.partial.html"
-      ></section>
-    </main>
+    <!-- Anastasiia Boiko -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.explore-canvas.partial.html"></section>
 
-    <div class="alert-container container"></div>
-    <script src="js/index.js"></script>
-  </body>
+    <!-- Andrii Prymak -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.services.partial.html"></section>
+  </main>
+  <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+  
+  <div class="alert-container container"></div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>
