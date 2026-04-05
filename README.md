@@ -10,3 +10,4 @@ https://koldovsky.github.io/4964-team-01
 - Andrii Prymak
 - Mariia Belyn
 - Olia Pazyniuk
+- Anastasiia Boiko
