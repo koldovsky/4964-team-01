@@ -12,8 +12,18 @@
 
     <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="header.partial.html"></header>
 
-    <main>
-        <h1 style="text-align: center; margin-top: 50px;">About Page: Under Construction</h1>
+    <main class="main">
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="about.hero.partial.html"
+        ></section>
+
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.about-us.partial.html"
+        ></section>
     </main>
 
     <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="partials/footer.partial.html"></footer>
