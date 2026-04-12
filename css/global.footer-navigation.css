@@ -1,0 +1,26 @@
+.footer__menu-wrapper {
+  position: relative;
+  .footer-nav {
+    .footer-nav__list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+
+      .footer-nav__item {
+        list-style: none;
+        .footer-nav__link {
+          font-family: var(--footer-font-family);
+          font-weight: var(--footer-title-font-weight);
+          font-size: 1rem;
+          text-decoration: line;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: var(--footer-font-color);
+        }
+      }
+    }
+  }
+}
