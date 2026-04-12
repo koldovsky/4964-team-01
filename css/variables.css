@@ -3,6 +3,8 @@
   --secondary-font: "Work Sans", sans-serif;
   --white-color: rgb(255, 255, 255);
 
+  --body-bg-color: rgb(255, 255, 255);
+
   /* Footer part */
   --footer-background-color: rgb(45, 45, 45);
   --footer-font-color: rgb(255, 255, 255);
@@ -21,14 +23,4 @@
   --footer-social-name-color: rgba(255, 255, 255, 0.7);
   --footer-social-text-color: rgb(255, 255, 255);
   /* End of Footer part */
-}
-
-/* Reset default browser settings */
-*,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /*outline: 1px solid red;*/
 }
