@@ -23,4 +23,9 @@
   --footer-social-name-color: rgba(255, 255, 255, 0.7);
   --footer-social-text-color: rgb(255, 255, 255);
   /* End of Footer part */
+
+  /* Contacts part */
+  --contacts-font-family: "Inter", sans-serif;
+  --contacts-font-color: rgb(255, 255, 255);
+  /* End of Contacts part */
 }

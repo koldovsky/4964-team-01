@@ -11,7 +11,9 @@
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
   </head>
   <body>
-    <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.hero.partial.html"></div>
+    <header>
+      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.hero.partial.html"></div>
+    </header>
 
     <main>
       <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.form.partial.html"></div>
