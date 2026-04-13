@@ -1,11 +1,16 @@
 .welcome-about-partial {
      margin: 0;
-     padding: 55px 15px;
+     padding: 60px 15px;
      box-sizing: border-box;
      background: url(https://res2.weblium.site/res/65a4dd651ae638000e4a167b/65a517485de065000f0ea91b_optimized?nowebp) ;
      background-repeat: no-repeat;
      background-position: center 50px ;
-     background-size: 90%;
+     background-size: 50%;
+             
+             @media (min-width: 600px) {
+               padding: 120px 0px;
+               background-position: center 120px;
+             }
     
     
 
@@ -28,6 +33,10 @@
     color: #808080; 
     text-align: center;
     padding: 0px 27px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
 }
          .welcome-about__logo {
        
@@ -45,26 +54,47 @@
     text-align: center;
     font-family: var(--font-main) ;
     color: #808080;
-    padding: 30px 27px;
-    gap: 40px;
+    padding: 50px 27px;
+    gap: 10px;
+
+              
+            @media (min-width: 600px) {
+          flex-direction: row;
+          justify-content: space-around;
+
+          
+
+
+          }
     
          } 
          .welcome-about__benefits {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 30px 27px;
+    padding: 0px 27px 0px;
+    justify-content: center;
+    gap: 40px;
+   
+
+          @media (min-width: 600px) {
+               flex-direction: row;
+          }
   
 }
           .welcome-about__benefits-h3 {
     font-family: var(--secondary-font);
     color: #2D2D2D;
-    padding: 20px;
+    padding: 20px 0px 0px;
 }
          .welcome-about__benefits-p {
     font-family: var(--font-main);
     color: #808080;
     padding: 20px ;
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
 }
 ul {
      list-style: none;
