@@ -1,7 +1,7 @@
 .special-offers {
   position: relative;
   background-color: #f7f7f3;
-  background-image: url("../img/habitations/special-offers-background.png");
+  background-image: url("../../img/habitations/special-offers-background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,7 +47,7 @@
         top: clamp(3.5rem, 6vw, -8rem);
         width: clamp(17rem, 38vw, 35rem);
         height: clamp(10rem, 22vw, 20rem);
-        background-image: url("../img/habitations/background-name-special-offers.png");
+        background-image: url("../../img/habitations/background-name-special-offers.png");
         background-repeat: no-repeat;
         background-position: left top;
         background-size: contain;

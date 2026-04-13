@@ -1,0 +1,31 @@
+:root {
+  --font-main: "Inter", sans-serif;
+  --secondary-font: "Work Sans", sans-serif;
+  --white-color: rgb(255, 255, 255);
+
+  --body-bg-color: rgb(255, 255, 255);
+
+  /* Footer part */
+  --footer-background-color: rgb(45, 45, 45);
+  --footer-font-color: rgb(255, 255, 255);
+  --footer-font-family: sans-serif;
+  --footer-title-font-size: 2rem;
+  --footer-title-font-weight: 700;
+  --footer-text-color: rgba(255, 255, 255, 0.7);
+  --footer-text-family: "Inter", sans-serif;
+  --footer-text-font-size: 1rem;
+  --footer-text-font-weight: 500;
+  --footer-title-delim-color: rgb(124, 120, 47);
+  --footer-mobile-number-color: rgb(234, 148, 73);
+  --footer-mail-color: rgb(255, 255, 255);
+  --footer-copyright-line-color: rgba(255, 255, 255, 0.2);
+  --footer-social-icon-color: rgb(234, 148, 73);
+  --footer-social-name-color: rgba(255, 255, 255, 0.7);
+  --footer-social-text-color: rgb(255, 255, 255);
+  /* End of Footer part */
+
+  /* Contacts part */
+  --contacts-font-family: "Inter", sans-serif;
+  --contacts-font-color: rgb(255, 255, 255);
+  /* End of Contacts part */
+}

@@ -31,32 +31,32 @@
     }
 
     .tent-card__image--geodesic-dome {
-      background-image: url("../img/habitations/geodesic-dome.jpeg");
+      background-image: url("../../img/habitations/geodesic-dome.jpeg");
       background-position: 50% 50%;
     }
 
     .tent-card__image--wood-cabins {
-      background-image: url("../img/habitations/wood-cabins.jpeg");
+      background-image: url("../../img/habitations/wood-cabins.jpeg");
       background-position: 50% 50%;
     }
 
     .tent-card__image--glamping-tent {
-      background-image: url("../img/habitations/glamping-tent.webp");
+      background-image: url("../../img/habitations/glamping-tent.webp");
       background-position: 20% 50%;
     }
 
     .tent-card__image--big-glamping-tent {
-      background-image: url("../img/habitations/big-glamping-tent.webp");
+      background-image: url("../../img/habitations/big-glamping-tent.webp");
       background-position: 50% 50%;
     }
 
     .tent-card__image--balloon-tent {
-      background-image: url("../img/habitations/balloon-tent.webp");
+      background-image: url("../../img/habitations/balloon-tent.webp");
       background-position: 90% 5%;
     }
 
     .tent-card__image--retro-luxury-tent {
-      background-image: url("../img/habitations/retro-luxury-tent.webp");
+      background-image: url("../../img/habitations/retro-luxury-tent.webp");
       background-position: 35% 65%;
     }
 

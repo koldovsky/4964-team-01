@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("./variables.css");
+@import url("./global.header.css");
+@import url("./global.footer.css");
+@import url("./global.css");
+
+@import url("./habitations/hero.partial.css");
+@import url("./habitations/tent-listings.partial.css");
+@import url("./habitations/special-offers.partial.css");
+
+
+:root {
+  --font-heading: "Work Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --background-color: white;
+  --text-primary-color: #FFFFFF;
+  --text-header-description-color: #dad6d2;
+  --text-title-card-color: #2d2d2d;
+  --text-title-card-description-color: #686868;
+  --text-special-offers-description: #808080;
+  --text-description-area-card: #858240;
+  --background-card-color: #7c782f;
+  --background-special-offers-color: #f9f9f7;
+  --icons-color: #ea9449;
+  --icons-text-color: #686868;
+  --font-size: 16px;
+  --divider-color: #e7e7db;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

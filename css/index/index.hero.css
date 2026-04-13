@@ -1,0 +1,38 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url('../../img/home/hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding-top: 140px; 
+    padding-bottom: 60px;
+
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}

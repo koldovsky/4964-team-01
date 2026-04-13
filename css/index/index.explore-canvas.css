@@ -1,0 +1,65 @@
+.explore-canvas * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+.explore-canvas {
+  --back-color: #fbfbfb;
+  --accent-color: #ea9449;
+  --text-color: #2d2d2d;
+  --color-secondary: #686868;
+  --color-accent: #808080;
+}
+.explore-canvas {
+  background-color: var(--back-color);
+  padding: 120px 0;
+
+  .explore-canvas--div {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .explore-canvas__info {
+      display: block;
+      display: flex;
+      justify-content: center;
+
+      .explore-canvas__info--title {
+        padding: 0 30px;
+        justify-content: flex-end;
+
+        .explore-canvas__info--habitations {
+          background-image: url("img/explore-canvas/habitations.png") center top / contain no-repeat;
+          background-size: cover;
+        }
+
+        .explore-canvas__info--tree {
+          width: 50px;
+          height: 50px;
+          color: var(--accent-color);
+        }
+
+        .explore-canvas__info--explore-canvas {
+          font-size: 46px;
+          font-family: Work Sans;
+          color: var(--text-color);
+        }
+      }
+
+      .explore-canvas__info--description {
+        .explore-canvas__info--we-offer {
+          font-size: 19px;
+          font-family: Inter;
+          color: var(--color-secondary);
+        }
+
+        .explore-canvas__info--lodging {
+          font-size: 17px;
+          font-family: Inter;
+          color: var(--color-accent);
+        }
+      }
+    }
+  }
+}

@@ -1,43 +1,23 @@
-/*Robert Hubskyi */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
+/* Reset default browser settings */
 *,
-*::before,
-*::after {
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*outline: 1px solid red; */
+  /*outline: 1px solid red;*/
 }
 
-:root {
-  --font-heading: "Work Sans", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --background-color: white;
-  --text-primary-color: #FFFFFF;
-  --text-header-description-color: #dad6d2;
-  --text-title-card-color: #2d2d2d;
-  --text-title-card-description-color: #686868;
-  --text-special-offers-description: #808080;
-  --text-description-area-card: #858240;
-  --background-card-color: #7c782f;
-  --background-special-offers-color: #f9f9f7;
-  --icons-color: #ea9449;
-  --icons-text-color: #686868;
-  --font-size: 16px;
-  --divider-color: #e7e7db;
+body {
+  background-color: var(--body-bg-color);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
+/* Global content configuration
+   p.s.: Do not wrap backgrounds in it, content only.
+*/
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-
-
-/* Robert Hubskyi */
