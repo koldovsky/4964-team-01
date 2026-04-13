@@ -25,7 +25,15 @@
   /* End of Footer part */
 
   /* Contacts part */
-  --contacts-font-family: "Inter", sans-serif;
   --contacts-font-color: rgb(255, 255, 255);
+  --contacts-font-family: "Inter", sans-serif;
+  --contacts-title-font-size: 2rem;
+  --contacts-desktop-title-font-size: 3rem;
+  --contacts-title-font-weight: 700;
+  --contacts-text-color: rgba(255, 255, 255, 0.7);
+  --contacts-text-family: "Inter", sans-serif;
+  --contacts-text-font-size: 1.2rem;
+  --contacts-text-font-weight: 500;
+  --contacts-social-icon-color: rgb(234, 148, 73);
   /* End of Contacts part */
 }

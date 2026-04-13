@@ -11,16 +11,44 @@
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
   </head>
   <body>
-    <header>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.hero.partial.html"></div>
+    <header class="header">
+      <!-- Vladyslav Tupikin -->
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header.partial.html"
+      ></nav>
     </header>
 
-    <main>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.form.partial.html"></div>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.qa.partial.html"></div>
-      <div data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="contacts.map.partial.html"></div>
+    <main class="contacts">
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.hero.partial.html"
+      ></section>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.form.partial.html"
+      ></section>
+
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.qa.partial.html"
+      ></div>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="contacts.map.partial.html"
+      ></div>
     </main>
 
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
   </body>
 </html>

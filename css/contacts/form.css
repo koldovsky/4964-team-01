@@ -1,0 +1,20 @@
+.contacts-form {
+  position: relative;
+  background: url("../../img/contacts/form-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  .contacts-form__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contacts-form__info svg {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    color: var(--contacts-social-icon-color);
+  }
+}
