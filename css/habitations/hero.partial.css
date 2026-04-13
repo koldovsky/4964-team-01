@@ -1,0 +1,79 @@
+.habitations-hero {
+  position: relative;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../../img/habitations/landscape.jpg);
+    
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  min-height: 320px;
+
+  .habitations-hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      gap: 16rem;
+    }
+  }
+
+  .habitations-hero__title {
+    color: var(--text-primary-color);
+    font-family: var(--font-heading);
+    font-weight: 550;
+    font-size: 2rem;
+    line-height: 1;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      max-width: 29rem;
+      font-weight: 550;
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      gap: 6rem;
+      font-size: 2.5rem;
+      max-width: 29rem;
+    }
+  }
+
+  .habitations-hero__description {
+    color: var(--text-header-description-color);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 35rem;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 1024px) {
+      max-width: 23rem;
+      font-size: 0.9rem;
+    }
+  }
+}
