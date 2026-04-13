@@ -1,9 +1,17 @@
 .welcome-about-partial {
-     margin: 0;
-     padding: 0;
+     margin: 0, 15;
+     padding: 0 ;
      box-sizing: border-box;
+     background: url(https://res2.weblium.site/res/65a4dd651ae638000e4a167b/65a517485de065000f0ea91b_optimized?nowebp) ;
+     background-repeat: no-repeat;
+     background-position:top;
+     background-size:contain;
+    
+
+    
 }
 .welcome-about__title {
+
     font-family: var(--secondary-font);
     font-size: 34px;
     color: #2D2D2D;
@@ -18,20 +26,22 @@
 .welcome-about__logo {
     width:50px;
     height: 50px;
-    display: block;
     margin: auto;
-    color: #EA9449;
+    color: #ea9449;
+    display: flex;
    
 }
 
 .welcome-about__stats {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-family: var(--font-main) ;
     color: #808080;
 }
 .welcome-about__benefits {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 .welcome-about__benefits-h3 {
