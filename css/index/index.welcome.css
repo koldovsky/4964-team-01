@@ -1,0 +1,44 @@
+.welcome-about-partial {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+.welcome-about__title {
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    color: #2D2D2D;
+    text-align: center;
+}
+.welcome-about__description {
+    font-family: var(--font-main);
+    font-size: 17px;
+    color: #808080; 
+    text-align: center;
+}
+.welcome-about__logo {
+    width:50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+    color: #EA9449;
+   
+}
+
+.welcome-about__stats {
+    display: block;
+    text-align: center;
+    font-family: var(--font-main) ;
+    color: #808080;
+}
+.welcome-about__benefits {
+    display: block;
+    text-align: center;
+}
+.welcome-about__benefits-h3 {
+    font-family: var(--secondary-font);
+    color: #2D2D2D;
+}
+.welcome-about__benefits-p {
+    font-family: var(--font-main);
+    color: #808080
+}
