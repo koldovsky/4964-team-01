@@ -1,0 +1,75 @@
+.habitations-carousel {
+  padding: 2rem 1rem;
+  background-color: var(--habitations-background-color);
+}
+
+.habitations-carousel #carouselExampleIndicators {
+  width: 100%;
+  max-width: 36rem !important;
+  margin: 0 auto !important;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+
+.habitations-carousel .carousel-inner {
+  overflow: hidden;
+  border-radius: 1.25rem;
+}
+
+.habitations-carousel .carousel-item:nth-child(2) img {
+  object-position: center 65%;
+}
+
+.habitations-carousel .carousel-item img {
+  display: block;
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.habitations-carousel .carousel-control-prev,
+.habitations-carousel .carousel-control-next {
+  width: 10%;
+}
+
+.habitations-carousel .carousel-control-prev-icon,
+.habitations-carousel .carousel-control-next-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: 100% 100%;
+}
+
+.habitations-carousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3e%3cpath d='M10.5 2.5L5 8l5.5 5.5' stroke='%23ea580c' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.habitations-carousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3e%3cpath d='M5.5 2.5L11 8l-5.5 5.5' stroke='%23ea580c' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+.habitations-carousel .carousel-indicators {
+  margin-bottom: 0.75rem;
+}
+
+.habitations-carousel .carousel-indicators [data-bs-target] {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .habitations-carousel #carouselExampleIndicators {
+    max-width: 20rem !important;
+  }
+
+  .habitations-carousel .carousel-item img {
+    height: 12rem;
+  }
+
+  .habitations-carousel .carousel-control-prev-icon,
+  .habitations-carousel .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
