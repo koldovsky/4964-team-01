@@ -1,0 +1,9 @@
+.contacts-qa {
+  position: relative;
+  background: url("../../img/contacts/qa-bg.png");
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  height: 100vh;
+}

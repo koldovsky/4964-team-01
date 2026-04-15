@@ -36,6 +36,7 @@
   --contacts-text-font-size: 1.2rem;
   --contacts-text-font-weight: 500;
   --contacts-social-icon-color: rgb(234, 148, 73);
+  --contacts-map-bg-color: rgb(45, 45, 45);
   /* End of Contacts part */
 
   /* Habitations part */
@@ -67,5 +68,4 @@
   --services-background-color: white;
   --services-button-color: rgb(124, 120, 47);
   --services-button-text-color: rgb(255, 255, 255);
-
 }
