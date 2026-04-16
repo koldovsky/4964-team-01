@@ -1,0 +1,62 @@
+.history-section {
+  position: relative;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 60px;
+  font-family: var(--font-main); 
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 10px;
+}
+
+.year {
+  color: var(--habitations-text-description-area-card);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  font-family: var(--habitations-font-heading);
+  color: var(--services-text-title-color);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background-color: var(--services-logo-color);
+}
+
+.description {
+  font-family: var(--font-main);
+  color: var(--services-text-description-color);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+
+  color: var(--services-button-color); 
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+  font-size: 24px;
+  font-weight: bold;
+}

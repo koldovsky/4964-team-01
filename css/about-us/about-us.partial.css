@@ -50,24 +50,24 @@
 .about-us__svg {
   width: 50px;
   height: 50px;
-  color: var(--footer-social-icon-color); 
+  color: var(--services-logo-color);
   margin-bottom: 12px;
 }
 
 .about-us__title {
-  font-family: var(--secondary-font);
+  font-family: var(--habitations-font-heading);
   font-size: 34px;
   font-weight: 700;
-  color: #2d2d2d;
+  color: var(--habitations-text-title-card-color);
   margin-bottom: 8px;
   line-height: 1.2;
 }
 
 .about-us__subtitle {
-  font-family: var(--secondary-font);
+  font-family: var(--habitations-font-heading);
   font-size: 22px;
   font-weight: 600;
-  color: #2d2d2d;
+  color: var(--habitations-text-title-card-color);
   margin-bottom: 24px;
 }
 
@@ -75,7 +75,7 @@
   font-family: var(--font-main);
   font-size: 16px;
   line-height: 1.6;
-  color: #808080;
+  color: var(--habitations-text-title-card-description-color);
   margin-bottom: 24px;
 }
 
@@ -90,15 +90,7 @@
   padding-left: 35px;
   margin-bottom: 15px;
   font-family: var(--font-main);
-  color: #2d2d2d;
-}
-
-.about-us__list li {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 15px;
-  font-family: var(--font-main);
-  color: var(--footer-title-delim-color);
+  color: var(--habitations-text-description-area-card);
 }
 
 .about-us__list li::before {
@@ -106,15 +98,11 @@
   position: absolute;
   left: 0;
   top: 2px;
-
   width: 18px;
   height: 18px;
-
-  background-color: currentColor;
-
-  -webkit-mask: url("../img/about-us/star.svg") no-repeat center;
+  background-color: currentColor; 
+  -webkit-mask: url("../../img/about-us/star.svg") no-repeat center;
   -webkit-mask-size: contain;
-
   mask: url("../../img/about-us/star.svg") no-repeat center;
   mask-size: contain;
 }
@@ -122,23 +110,20 @@
 .about-us__button {
   display: inline-block;
   padding: 16px 42px;
-
-  background-color: var(--footer-title-delim-color);
+  background-color: var(--services-button-color);
   color: var(--white-color);
-  border: 2px solid var(--footer-title-delim-color);
-
+  border: 2px solid var(--services-button-color);
   font-family: var(--font-main);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .about-us__button:hover {
-  background-color: var(--footer-mobile-number-color);
-  border-color: var(--footer-mobile-number-color);
+  background-color: var(--services-logo-color);
+  border-color: var(--services-logo-color);
 }
 
 .about-us__stats {
@@ -146,9 +131,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
-  border-top: 1px solid #eee;
-  padding-top: 60px;
-  margin-top: 40px;
+  border-top: 1px solid var(--habitations-divider-color);
 }
 
 @media (min-width: 768px) {
@@ -167,10 +150,10 @@
 
 .stat-item__number {
   display: block;
-  font-family: var(--secondary-font);
+  font-family: var(--habitations-font-heading);
   font-size: 48px;
   font-weight: 700;
-  color: var(--footer-social-icon-color);
+  color: var(--services-logo-color);
   margin-bottom: 8px;
   line-height: 1;
 }
@@ -180,7 +163,7 @@
   font-family: var(--font-main);
   text-transform: uppercase;
   font-size: 12px;
-  color: var(--footer-title-delim-color);
+  color: var(--habitations-text-description-area-card);
   line-height: 1.4;
   max-width: 150px;
   font-weight: 600;
