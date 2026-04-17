@@ -18,7 +18,7 @@
 .welcome-about__title {
   font-family: var(--secondary-font);
   font-size: 34px;
-  color: #2d2d2d;
+  color: var(--color-gray-900);
   text-align: center;
   padding: 20px;
   font-weight: 600;
@@ -28,7 +28,7 @@
 .welcome-about__description {
   font-family: var(--font-main);
   font-size: 17px;
-  color: #808080;
+  color: var(--color-gray-500);
   text-align: center;
   padding: 0px 27px;
   max-width: 800px;
@@ -52,7 +52,7 @@
   flex-direction: column;
   text-align: center;
   font-family: var(--font-main);
-  color: #808080;
+  color: var(--color-gray-500);
   padding: 50px 27px;
   margin: 0px 15px;
   justify-content: center;
@@ -92,14 +92,14 @@
 
 .welcome-about__benefits-h3 {
   font-family: var(--secondary-font);
-  color: #2d2d2d;
+  color: var(--color-gray-900);
   padding: 20px 0px 0px;
   font-weight: 600;
 }
 
 .welcome-about__benefits-p {
   font-family: var(--font-main);
-  color: #808080;
+  color: var(--color-gray-500);
   padding: 20px;
   text-align: center;
   max-width: 320px;
