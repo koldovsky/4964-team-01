@@ -2,8 +2,7 @@
   position: relative;
 
   background:
-    linear-gradient(var(--about-overlay), var(--about-overlay)),
-    url(../../img/about-us/about-us-hero-background.jpg);
+    linear-gradient(var(--about-overlay), var(--about-overlay)), url(../../img/about-us/about-us-hero-background.jpg);
 
   background-size: cover;
   background-position: center;

@@ -80,27 +80,27 @@
   /* End of Services part */
 
   /* About us part */
-/* fonts */
---about-font-body: var(--font-main);
---about-font-heading: var(--secondary-font);
+  /* fonts */
+  --about-font-body: var(--font-main);
+  --about-font-heading: var(--secondary-font);
 
-/* text */
---about-text-primary: var(--color-gray-900);
---about-text-secondary: var(--color-gray-500);
+  /* text */
+  --about-text-primary: var(--color-gray-900);
+  --about-text-secondary: var(--color-gray-500);
 
-/* accent */
---about-accent: var(--color-accent);
---about-accent-dark: var(--color-accent-dark);
+  /* accent */
+  --about-accent: var(--color-accent);
+  --about-accent-dark: var(--color-accent-dark);
 
-/* backgrounds */
---about-bg: var(--color-white);
---about-overlay: var(--color-black-overlay-40);
+  /* backgrounds */
+  --about-bg: var(--color-white);
+  --about-overlay: var(--color-black-overlay-40);
 
-/* UI */
---about-divider-color: var(--color-divider);
+  /* UI */
+  --about-divider-color: var(--color-divider);
 
-/* button */
---about-button-bg: var(--about-accent-dark);
---about-button-hover-bg: var(--about-accent);
+  /* button */
+  --about-button-bg: var(--about-accent-dark);
+  --about-button-hover-bg: var(--about-accent);
   /* End of About us part */
 }
