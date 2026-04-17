@@ -2,9 +2,12 @@
   position: relative;
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 60px;
+  padding: 40px 60px;
 
   font-family: var(--about-font-body);
+
+  border-top: 1px solid var(--about-divider-color);
+  border-bottom: 1px solid var(--about-divider-color);
 }
 
 .swiper-slide {
