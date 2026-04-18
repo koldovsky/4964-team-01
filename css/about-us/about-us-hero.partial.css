@@ -46,10 +46,10 @@
 }
 
 .about-us-hero__title {
-  color: var(--about-text-on-dark);
+  color: var(--about-hero-text-on-dark);
   font-family: var(--about-font-heading);
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   margin: 0;
 }

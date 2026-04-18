@@ -13,6 +13,7 @@
   --color-accent-dark: #7c782f;
   --color-black-overlay-40: rgba(0, 0, 0, 0.4);
   --color-divider: #e7e7db;
+  --collor-opaque-white-70: rgba(255, 255, 255, 0.7);
 
   /* Footer part */
   --footer-background-color: rgb(45, 45, 45);
@@ -95,20 +96,19 @@
   --about-button-hover-bg: var(--about-accent);
   --about-year-color: var(--about-accent-dark);
   --about-stat-number-color: var(--about-accent);
+  --about-hero-text-on-dark: var(--collor-opaque-white-70);
   /* End of About us part */
 
   /* Discover part */
   --discover-font-family-main: "Work Sans", sans-serif;
   --discover-title-font-size: 34px;
   --discover-font-weight: 600;
-  --discover-bg-color:  rgba(209, 162, 162, 0.1);
+  --discover-bg-color: rgba(209, 162, 162, 0.1);
   --discover-form-icon-color: rgb(234, 148, 73);
   --discover-font-family: "Inter", sans-serif;
   --discover-text-color: rgb(104, 104, 104);
-  --discover-border-bottom-color:#858240;
+  --discover-border-bottom-color: #858240;
   --discover-bottom-text-color: #ffffff;
   --discover-icons-text-color: rgb(45, 45, 45);
   --discover-svg-color: #ea9449;
-
-  
 }
