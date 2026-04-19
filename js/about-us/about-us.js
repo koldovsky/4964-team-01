@@ -9,6 +9,8 @@ async function init() {
   // Import carousel module and call its initialization function
   const carouselModule = await import("./about-us-activity-carousel.js");
   carouselModule.initActivityCarousel();
+  const heroParallax = await import("./about-us-hero-parallax.js");
+heroParallax.initAboutUsHeroParallax();
 }
 
 // Calculate the total number of partials to be loaded via HTMX

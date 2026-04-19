@@ -1,14 +1,53 @@
+/* Oleksandr Sydorskyi */
+
 .about-us-hero {
   position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+.about-us-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: -40px;
 
   background:
-    linear-gradient(var(--about-overlay), var(--about-overlay)), url(../../img/about-us/about-us-hero-background.jpg);
+    linear-gradient(var(--about-overlay), var(--about-overlay)),
+    url("../../img/about-us/about-us-hero-background.jpg");
 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
+  transform:
+    translate3d(var(--hero-parallax-x, 0px), var(--hero-parallax-y, 0px), 0)
+    scale(1.1);
+
+  will-change: transform;
+  z-index: 0;
+}
+
+.about-us-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.08);
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about-us-hero__container {
+  position: relative;
+  z-index: 2;
+
   min-height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-us-hero__content {
@@ -16,13 +55,9 @@
   flex-direction: column;
   gap: 1rem;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   width: 100%;
   max-width: 1200px;
+
   padding: 0 1rem;
 }
 
@@ -64,5 +99,11 @@
   .about-us-hero__title {
     max-width: 40rem;
     font-size: 1.8rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-us-hero::before {
+    transform: none !important;
   }
 }
