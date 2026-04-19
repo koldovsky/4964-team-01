@@ -103,7 +103,7 @@
   --discover-font-family-main: "Work Sans", sans-serif;
   --discover-title-font-size: 34px;
   --discover-font-weight: 600;
-  --discover-bg-color: rgba(209, 162, 162, 0.1);
+  --discover-bg-color: rgb(209, 162, 162, 0.1);
   --discover-form-icon-color: rgb(234, 148, 73);
   --discover-font-family: "Inter", sans-serif;
   --discover-text-color: rgb(104, 104, 104);
@@ -111,4 +111,7 @@
   --discover-bottom-text-color: #ffffff;
   --discover-icons-text-color: rgb(45, 45, 45);
   --discover-svg-color: #ea9449;
+  --discover-link-color: rgb(124, 120, 47);
+  --discover-description-color: rgb(128, 128, 128);
+  /* End of Discover part */
 }
