@@ -1,14 +1,17 @@
 /* Oleksandr Sydorskyi */
 
+:root {
+  --hero-parallax-transition: transform 0.1s ease-out;
+}
+
 .about-us-hero {
   position: relative;
   overflow: hidden;
   min-height: 320px;
 }
 
-.about-us-hero::before {
-  content: "";
-
+/* BACKGROUND LAYER */
+.about-us-hero__layer--back {
   position: absolute;
   inset: -40px;
 
@@ -20,25 +23,27 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  transform:
-    translate3d(var(--hero-parallax-x, 0px), var(--hero-parallax-y, 0px), 0)
-    scale(1.1);
+  transform: scale(1.1);
 
-  will-change: transform;
   z-index: 0;
 }
 
-.about-us-hero::after {
-  content: "";
+/* OVERLAY */
+.about-us-hero__overlay {
   position: absolute;
   inset: 0;
-
   background: rgba(0, 0, 0, 0.08);
-
   z-index: 1;
   pointer-events: none;
 }
 
+/* GENERIC PARALLAX LAYER */
+.about-us-hero__layer {
+  will-change: transform;
+  transition: var(--hero-parallax-transition);
+}
+
+/* CONTENT */
 .about-us-hero__container {
   position: relative;
   z-index: 2;
@@ -71,6 +76,7 @@
   }
 }
 
+/* TEXT STYLES */
 .about-us-hero__label {
   color: var(--about-text-on-dark);
   font-family: var(--about-font-body);
@@ -78,6 +84,7 @@
   font-size: 2rem;
   line-height: 1;
   margin: 0;
+  white-space: nowrap;
 }
 
 .about-us-hero__title {
@@ -89,21 +96,27 @@
   margin: 0;
 }
 
+/* LAYERS DEPTH */
+.about-us-hero__layer--middle {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-hero__layer--front {
+  position: relative;
+  z-index: 3;
+  transform: translateZ(0); /* anti-blur hack */
+}
+
 @media (min-width: 768px) {
   .about-us-hero__title {
     max-width: 35rem;
   }
 }
 
-@media (min-width: 1024px) {
-  .about-us-hero__title {
-    max-width: 40rem;
-    font-size: 1.8rem;
-  }
-}
-
+/* ACCESSIBILITY */
 @media (prefers-reduced-motion: reduce) {
-  .about-us-hero::before {
+  .about-us-hero__layer {
     transform: none !important;
   }
 }

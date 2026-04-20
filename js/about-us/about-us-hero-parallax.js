@@ -4,6 +4,8 @@ export function initAboutUsHeroParallax() {
   const hero = document.querySelector('.about-us-hero');
   if (!hero) return;
 
+  const layers = hero.querySelectorAll('.about-us-hero__layer');
+
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   const isTouch = window.matchMedia('(hover: none)').matches;
@@ -23,11 +25,14 @@ export function initAboutUsHeroParallax() {
     currentX += (targetX - currentX) * 0.08;
     currentY += (targetY - currentY) * 0.08;
 
-    const moveX = currentX * 20;
-    const moveY = currentY * 20;
+    layers.forEach((layer) => {
+      const depth = parseFloat(layer.dataset.depth) || 0;
 
-    hero.style.setProperty('--hero-parallax-x', `${moveX}px`);
-    hero.style.setProperty('--hero-parallax-y', `${moveY}px`);
+      const moveX = currentX * depth * 30;
+      const moveY = currentY * depth * 30;
+
+      layer.style.transform = `translate(${moveX}px, ${moveY}px)`;
+    });
 
     raf = requestAnimationFrame(animate);
   }
