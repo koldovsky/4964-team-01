@@ -150,13 +150,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 16px 32px;
-      border-radius: 999px;
-      background-color: var(--services-logo-color);
+      padding: 15px 30px;
+      gap: 10px;
+      background-color: var(--services-button-color);
       color: var(--white-color);
       text-decoration: none;
       font-weight: 700;
-      min-width: fit-content;
+      min-width: 146px;
     }
   }
 }
