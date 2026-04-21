@@ -1,0 +1,122 @@
+/* Oleksandr Sydorskyi */
+
+:root {
+  --hero-parallax-transition: transform 0.1s ease-out;
+}
+
+.about-us-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+}
+
+/* BACKGROUND LAYER */
+.about-us-hero__layer--back {
+  position: absolute;
+  inset: -40px;
+
+  background:
+    linear-gradient(var(--about-overlay), var(--about-overlay)),
+    url("../../img/about-us/about-us-hero-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transform: scale(1.1);
+
+  z-index: 0;
+}
+
+/* OVERLAY */
+.about-us-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.08);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* GENERIC PARALLAX LAYER */
+.about-us-hero__layer {
+  will-change: transform;
+  transition: var(--hero-parallax-transition);
+}
+
+/* CONTENT */
+.about-us-hero__container {
+  position: relative;
+  z-index: 2;
+
+  min-height: 320px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+  max-width: 1200px;
+
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .about-us-hero__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 0 2rem;
+  }
+}
+
+/* TEXT STYLES */
+.about-us-hero__label {
+  color: var(--about-text-on-dark);
+  font-family: var(--about-font-body);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.about-us-hero__title {
+  color: var(--about-hero-text-on-dark);
+  font-family: var(--about-font-heading);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* LAYERS DEPTH */
+.about-us-hero__layer--middle {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-hero__layer--front {
+  position: relative;
+  z-index: 3;
+  transform: translateZ(0); /* anti-blur hack */
+}
+
+@media (min-width: 768px) {
+  .about-us-hero__title {
+    max-width: 35rem;
+  }
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .about-us-hero__layer {
+    transform: none !important;
+  }
+}

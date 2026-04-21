@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Hidden Heaven</title>
 
-    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/about-us/about-us-activity-carousel.css" />
+
+    <script src="./js/htmx.min.js"></script>
   </head>
 
   <body>
-    <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></header>
+    <header class="header">
+      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
+    </header>
 
     <main class="main">
       <!-- Oleksandr Sydorskyi -->
@@ -20,10 +27,17 @@
 
       <!--Khrystyna Chukur-->
       <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.experience.partial.html"></section>
+
+      <!-- Oleksandr Sydorskyi -->
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-activity-carousel.html"></section>
+
+      <!-- Oleksandr Sydorskyi -->
+      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-events.partial.html"></section>
     </main>
 
     <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
 
-    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/about-us/about-us.js" defer></script>
   </body>
 </html>

@@ -1,0 +1,282 @@
+.discover-partial {
+  position: relative;
+  margin-top: 50px;
+  font-family: var(--discover-font-family);
+
+  .discover-partial__container {
+    .discover-form__bg {
+      margin-top: 50px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 12px;
+
+      margin-bottom: 10px;
+      .discover-form__bg-text {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        left: 10px;
+
+        font-family: var(--discover-font-family);
+        font-size: 20vw;
+        font-weight: var(--discover-font-weight);
+
+        color: var(--discover-bg-color);
+        z-index: 0;
+      }
+      .discover-form__icon {
+        padding-top: 10px;
+        left: 10px;
+        width: 3rem;
+        flex-shrink: 0;
+        color: var(--discover-form-icon-color);
+      }
+    }
+
+    .discover-partial__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      .discover-partial__header {
+        .discover-partial__title {
+          padding-top: 10px;
+          font-family: var(--discover-font-family);
+          font-size: var(--discover-title-font-size);
+          font-weight: var(--discover-font-weight);
+          letter-spacing: 1;
+        }
+
+        .discover-main__description {
+          padding-top: 30px;
+          color: var(--discover-text-color);
+          font-size: 19px;
+          line-height: 1.6;
+        }
+      }
+      .discover-partial__icons {
+        .discover-partial__luxury {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin: 40px 0;
+
+          li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+              width: 22px;
+              height: auto;
+              flex-shrink: 0;
+              color: var(--discover-svg-color);
+            }
+
+            p {
+              margin: 0;
+              font-style: italic;
+              font-size: 0.9rem;
+              color: var(--discover-icons-text-color);
+            }
+          }
+        }
+      }
+
+      .discover-partial__promises {
+        margin-bottom: 30px;
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-family: var(--discover-font-family-main);
+        color: var(--discover-text-color);
+        font-size: 18x;
+      }
+    }
+
+    .discover-partial__click {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-left: 0;
+      margin-right: auto;
+      margin-bottom: 35px;
+
+      text-decoration: none;
+      font-family: var(--discover-font-family);
+      font-size: 13.2px;
+      font-weight: 700;
+      width: 100%;
+      height: 50px;
+      max-width: 189px;
+      line-height: 1.6;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      color: var(--discover-bottom-text-color);
+      background-color: var(--discover-border-bottom-color);
+
+      transition: all 0.3s ease;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .discover-partial__click:active {
+      background: var(--discover-svg-color);
+      color: black;
+    }
+  }
+
+  .discover-partial__promo {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+
+    background-color: var(--discover-bottom-text-color);
+    overflow: hidden;
+  }
+
+  .discover-partial__promo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/discover/pattern-light.jpeg");
+    background-repeat: repeat;
+    background-size: 200px;
+    opacity: 0.15;
+    z-index: 1;
+  }
+
+  .discover-partial__promo-title,
+  .discover-partial__promo-text,
+  .discover-partial__promo-link {
+    position: relative;
+    z-index: 2;
+  }
+
+  .discover-partial__promo-title {
+    font-size: 30px;
+    font-family: var(--discover-font-family-main);
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin: 0 auto 24px;
+    max-width: 280px;
+  }
+
+  .discover-partial__promo-highlight {
+    display: block;
+    color: var(--discover-link-color);
+  }
+
+  .discover-partial__promo-text {
+    font-size: 19px;
+    font-family: var(--discover-font-family);
+    line-height: 1.6;
+    color: var(--discover-text-color);
+    max-width: 320px;
+    margin: 0 auto 24px;
+  }
+
+  .discover-partial__promo-link {
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--discover-svg-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--discover-svg-color);
+    padding-bottom: 4px;
+    font-weight: bold;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
+  }
+
+  .discover-partial__promo-link:hover {
+    opacity: 0.7;
+  }
+
+  .discover-partial__activities {
+    margin-top: 60px;
+  }
+
+  .discover-partial__activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .discover-partial__activity {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .discover-partial__activity img {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+  }
+
+  .discover-partial__activity-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .discover-partial__activity-title {
+    line-height: 1.1;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--discover-icons-text-color);
+    font-family: var(--discover-font-family-main);
+  }
+
+  .discover-partial__activity-description {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--discover-description-color);
+    font-family: var(--discover-font-family);
+  }
+
+  .discover-partial__activity-list + .discover-partial__activity-list {
+    margin-top: 60px;
+  }
+}
+
+/*
+@media (min-width: 768px) {
+  .discover-partial__promo-title {
+    font-size: 42px;
+    max-width: 500px;
+  }
+
+  .discover-partial__promo-text {
+    font-size: 18px;
+    max-width: 500px;
+  }
+
+  .discover-partial__activity-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+  */

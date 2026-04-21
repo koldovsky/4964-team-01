@@ -1,0 +1,114 @@
+/* Oleksandr Sydorskyi */
+/* Events section */
+.events {
+  padding: 100px 0;
+  background-color: var(--about-bg);
+}
+
+.events__container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+@media (max-width: 992px) {
+  .events__container {
+    flex-direction: column;
+  }
+}
+
+.events__image,
+.events__info {
+  flex: 1;
+}
+
+.events__img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.events__svg {
+  width: 40px;
+  height: 40px;
+  color: var(--about-accent);
+  margin-bottom: 15px;
+}
+
+.events__title {
+  font-family: var(--about-font-heading);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--about-text-primary);
+  margin-bottom: 15px;
+}
+
+.events__subtitle {
+  font-family: var(--about-font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--about-text-secondary);
+  margin-bottom: 25px;
+}
+
+.events__description {
+  font-family: var(--about-font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--about-text-secondary);
+  margin-bottom: 40px;
+}
+
+/* Accordion (Details & Summary) */
+.events__accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  border-top: 1px solid var(--about-divider-color);
+}
+
+.accordion-item:first-child {
+  border-top: none;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid var(--about-divider-color);
+}
+
+.accordion-item__title {
+  list-style: none;
+  padding: 20px;
+  font-family: var(--about-font-heading);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--about-text-primary);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-item__title::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item__title::after {
+  content: "+";
+  font-size: 24px;
+  color: var(--about-text-secondary);
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+details[open] .accordion-item__title::after {
+  transform: rotate(45deg);
+}
+
+.accordion-item__content {
+  padding-bottom: 20px;
+  font-family: var(--about-font-body);
+  color: var(--about-text-secondary);
+  line-height: 1.5;
+}

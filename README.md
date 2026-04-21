@@ -11,4 +11,4 @@ https://koldovsky.github.io/4964-team-01
 - Olia Pazyniuk
 - Anastasiia Boiko
 - Khrystyna Chukur
-- 
+- Oksana Motovylova

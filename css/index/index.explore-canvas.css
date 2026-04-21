@@ -1,0 +1,214 @@
+.explore-canvas * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+.explore-canvas {
+  --back-color: #fdfdfd;
+  --accent-color: #ea9449;
+  --text-color: #2d2d2d;
+  --color-secondary: #686868;
+  --color-accent: #808080;
+  --color-green: #7c782f;
+  --line: rgb(231, 231, 219);
+}
+.explore-canvas {
+  background-color: var(--back-color);
+  padding: 80px 0;
+
+  @media (max-width: 1200px) {
+    padding: 60px 0;
+  }
+
+  .explore-canvas--div {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    .explore-canvas__info {
+      display: flex;
+      align-items: flex-end;
+      padding: 0 20px;
+
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      .explore-canvas__info--title {
+        @media (min-width: 1200px) {
+          width: 50%;
+        }
+
+        .explore-canvas__info--habitations {
+          width: 80%;
+
+          @media (max-width: 1200px) {
+            width: 100%;
+          }
+        }
+
+        .explore-canvas__info--tree {
+          width: 50px;
+          height: 50px;
+          color: var(--accent-color);
+        }
+
+        .explore-canvas__info--explore-canvas {
+          text-overflow: ellipsis;
+          font-size: 46px;
+          font-family:
+            Work Sans,
+            sans-serif;
+          color: var(--text-color);
+          font-weight: 600;
+
+          @media (max-width: 1200px) {
+            font-size: 40px;
+          }
+        }
+      }
+
+      .explore-canvas__info--description {
+        margin-left: 20px;
+        @media (min-width: 1200px) {
+          width: 50%;
+        }
+        @media (max-width: 1200px) {
+          margin: 25px 0;
+        }
+
+        .explore-canvas__info--we-offer {
+          font-size: 19px;
+          font-family: Inter;
+          color: var(--color-secondary);
+        }
+
+        .explore-canvas__info--lodging {
+          font-size: 17px;
+          font-family: Inter;
+          color: var(--color-accent);
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+
+        .explore-canvas__info--see-all {
+          font-size: 17px;
+          font-family: Inter, sans-serif;
+          color: var(--accent-color);
+          font-weight: 600;
+        }
+      }
+    }
+
+    .explore-canvas__habitation {
+      display: flex;
+    }
+
+    @media (max-width: 800px) {
+      .explore-canvas__habitation {
+        flex-direction: column;
+      }
+    }
+
+    .explore-canvas__habitation--one {
+      width: 50%;
+      padding: 60px 20px 60px 0px;
+      margin-left: 20px;
+    }
+    @media (max-width: 800px) {
+      .explore-canvas__habitation--one {
+        width: 100%;
+        padding: 60px 20px 0px 20px;
+        margin: 0;
+      }
+    }
+
+    .explore-canvas__habitation--two {
+      width: 50%;
+      padding: 60px 20px 60px 0px;
+    }
+    @media (max-width: 800px) {
+      .explore-canvas__habitation--two {
+        width: 100%;
+        padding: 60px 20px 0px 20px;
+      }
+    }
+
+    .explore-canvas__habitation--info {
+      color: var(--color-green);
+      font-size: 12px;
+      font-family: Inter, sans-serif;
+      padding: 20px 0;
+    }
+    .explore-canvas__habitation--title {
+      font-size: 24px;
+      font-family:
+        Work Sans,
+        sans-serif;
+      color: var(--text-color);
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .explore-canvas__habitation--icons {
+      display: flex;
+      align-items: center;
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: 800px) {
+      .explore-canvas__habitation--icons {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    .explore-canvas__habitation--pets-allowed {
+      display: flex;
+      align-items: center;
+    }
+
+    .explore-canvas__habitation--wifi {
+      display: flex;
+      align-items: center;
+    }
+    .explore-canvas__habitation--bonfire {
+      display: flex;
+      align-items: center;
+    }
+
+    .icon-habitation {
+      width: 20px;
+      height: 24px;
+      color: var(--accent-color);
+    }
+
+    .text-habitation {
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+      color: var(--color-secondary);
+      margin: 0 10px;
+    }
+
+    .explore-canvas__habitation--information {
+      font-size: 17px;
+      font-family: Inter, sans-serif;
+      color: var(--color-secondary);
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .explore-canvas__btn {
+      width: 145px;
+      height: 50px;
+      background-color: var(--color-green);
+      border: 0;
+      color: white;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+:root {
+  /* Base fonts */
+  --font-main: "Inter", sans-serif;
+  --secondary-font: "Work Sans", sans-serif;
+
+  /* Base colors */
+  --white-color: rgb(255, 255, 255);
+  --body-bg-color: rgb(255, 255, 255);
+  --color-white: #ffffff;
+  --color-gray-900: #2d2d2d;
+  --color-gray-500: #808080;
+  --color-accent: #ea9449;
+  --color-accent-dark: #7c782f;
+  --color-black-overlay-40: rgba(0, 0, 0, 0.4);
+  --color-divider: #e7e7db;
+  --collor-opaque-white-70: rgba(255, 255, 255, 0.7);
+
+  /* Footer part */
+  --footer-background-color: rgb(45, 45, 45);
+  --footer-font-color: rgb(255, 255, 255);
+  --footer-font-family: sans-serif;
+  --footer-title-font-size: 2rem;
+  --footer-title-font-weight: 700;
+  --footer-text-color: rgba(255, 255, 255, 0.7);
+  --footer-text-family: "Inter", sans-serif;
+  --footer-text-font-size: 1rem;
+  --footer-text-font-weight: 500;
+  --footer-title-delim-color: rgb(124, 120, 47);
+  --footer-mobile-number-color: rgb(234, 148, 73);
+  --footer-mail-color: rgb(255, 255, 255);
+  --footer-copyright-line-color: rgba(255, 255, 255, 0.2);
+  --footer-social-icon-color: rgb(234, 148, 73);
+  --footer-social-name-color: rgba(255, 255, 255, 0.7);
+  --footer-social-text-color: rgb(255, 255, 255);
+  /* End of Footer part */
+
+  /* Contacts part */
+  --contacts-font-color: rgb(255, 255, 255);
+  --contacts-font-family: "Inter", sans-serif;
+  --contacts-title-font-size: 2.1rem;
+  --contacts-desktop-title-font-size: 3rem;
+  --contacts-title-font-weight: 700;
+  --contacts-subtitle-color: rgba(255, 255, 255, 0.7);
+  --contacts-text-color: rgba(0, 0, 0, 0.7);
+  --contacts-text-family: "Inter", sans-serif;
+  --contacts-text-font-size: 1.2rem;
+  --contacts-text-font-weight: 500;
+  --contacts-social-icon-color: rgb(234, 148, 73);
+  --contacts-map-bg-color: rgb(45, 45, 45);
+  /* End of Contacts part */
+
+  /* Habitations part */
+
+  --habitations-font-heading: "Work Sans", sans-serif;
+  --habitations-font-body: "Inter", sans-serif;
+  --habitations-background-color: white;
+  --habitations-text-primary-color: #ffffff;
+  --habitations-text-header-description-color: #dad6d2;
+  --habitations-text-title-card-color: #2d2d2d;
+  --habitations-text-title-card-description-color: #808080;
+  --habitations-text-special-offers-description: #808080;
+  --habitations-text-description-area-card: #858240;
+  --habitations-background-card-color: #7c782f;
+  --habitations-background-special-offers-color: #f9f9f7;
+  --habitations-icons-color: #ea9449;
+  --habitations-icons-text-color: #686868;
+  --habitations-font-size: 16px;
+  --habitations-divider-color: #e7e7db;
+  /*End of Habitations part*/
+
+  /* Services part */
+  --services-logo-color: #ea9449;
+  --services-email-text-color: #ea9449;
+  --services-font-title: "Work Sans", sans-serif;
+  --services-font-body: "Inter", sans-serif;
+  --services-text-title-color: #2d2d2d;
+  --services-text-description-color: #808080;
+  --services-background-color: white;
+  --services-button-color: rgb(124, 120, 47);
+  --services-button-text-color: rgb(255, 255, 255);
+  /* End of Services part */
+
+  /* About us part */
+  --about-font-body: var(--font-main);
+  --about-font-heading: var(--secondary-font);
+  --about-text-primary: var(--color-gray-900);
+  --about-text-secondary: var(--color-gray-500);
+  --about-text-on-dark: var(--color-white);
+  --about-accent: var(--color-accent);
+  --about-accent-dark: var(--color-accent-dark);
+  --about-bg: var(--color-white);
+  --about-overlay: var(--color-black-overlay-40);
+  --about-divider-color: var(--color-divider);
+  --about-button-bg: var(--about-accent-dark);
+  --about-button-text: var(--color-white);
+  --about-button-hover-bg: var(--about-accent);
+  --about-year-color: var(--about-accent-dark);
+  --about-stat-number-color: var(--about-accent);
+  --about-hero-text-on-dark: var(--collor-opaque-white-70);
+  /* End of About us part */
+
+  /* Discover part */
+  --discover-font-family-main: "Work Sans", sans-serif;
+  --discover-title-font-size: 34px;
+  --discover-font-weight: 600;
+  --discover-bg-color: rgb(209, 162, 162, 0.1);
+  --discover-form-icon-color: rgb(234, 148, 73);
+  --discover-font-family: "Inter", sans-serif;
+  --discover-text-color: rgb(104, 104, 104);
+  --discover-border-bottom-color: #858240;
+  --discover-bottom-text-color: #ffffff;
+  --discover-icons-text-color: rgb(45, 45, 45);
+  --discover-svg-color: #ea9449;
+  --discover-link-color: rgb(124, 120, 47);
+  --discover-description-color: rgb(128, 128, 128);
+  /* End of Discover part */
+}

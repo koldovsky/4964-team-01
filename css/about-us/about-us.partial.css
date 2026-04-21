@@ -1,0 +1,185 @@
+/* Oleksandr Sydorskyi */
+/* About us section */
+.about-us {
+  padding: 100px 0;
+  background-color: var(--about-bg);
+}
+
+.about-us__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 992px) {
+  .about-us__container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.about-us__image,
+.about-us__info {
+  flex: 1;
+}
+
+.about-us__info {
+  position: relative;
+  z-index: 1;
+}
+
+.about-us__info::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  width: 100%;
+  max-width: 500px;
+  height: 200px;
+
+  background-image: url("../../img/about-us/about-us-watermark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+
+  opacity: 0.9;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Icon */
+.about-us__svg {
+  width: 50px;
+  height: 50px;
+  color: var(--about-accent);
+  margin-bottom: 12px;
+}
+
+/* Typography */
+.about-us__title {
+  font-family: var(--about-font-heading);
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--about-text-primary);
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.about-us__subtitle {
+  font-family: var(--about-font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--about-text-primary);
+  margin-bottom: 24px;
+}
+
+.about-us__description {
+  font-family: var(--about-font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--about-text-secondary);
+  margin-bottom: 24px;
+}
+
+/* List */
+.about-us__list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about-us__list li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+
+  font-family: var(--about-font-body);
+  color: var(--about-accent-dark);
+}
+
+.about-us__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: currentColor;
+
+  -webkit-mask: url("../../img/about-us/star.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../../img/about-us/star.svg") no-repeat center;
+  mask-size: contain;
+}
+
+/* Button */
+.about-us__button {
+  display: inline-block;
+  padding: 16px 42px;
+
+  background-color: var(--about-button-bg);
+  color: var(--about-button-text);
+  border: 2px solid var(--about-button-bg);
+
+  font-family: var(--about-font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about-us__button:hover {
+  background-color: var(--about-button-hover-bg);
+  border-color: var(--about-button-hover-bg);
+}
+
+/* Stats */
+.about-us__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 40px;
+  border-top: 1px solid var(--about-divider-color);
+}
+
+@media (min-width: 768px) {
+  .about-us__stats {
+    flex-direction: row;
+    gap: clamp(20px, 5vw, 80px);
+  }
+}
+
+.stat-item {
+  flex: 1;
+  text-align: left;
+}
+
+.stat-item__number {
+  display: block;
+  font-family: var(--about-font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--about-stat-number-color);
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.stat-item__label {
+  display: block;
+  font-family: var(--about-font-body);
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+
+  color: var(--about-accent-dark);
+
+  line-height: 1.4;
+  max-width: 150px;
+}

@@ -1,0 +1,57 @@
+.contacts__hero {
+  position: relative;
+
+  background: linear-gradient(rgba(45, 45, 45, 0.6), rgba(45, 45, 45, 0.6)), url("../../img/contacts/hero-bg.jpg");
+
+  background-size: cover;
+  background-position: 50% 80%;
+  background-repeat: no-repeat;
+  min-height: 320px;
+
+  .contacts-hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .contacts-hero__title {
+      padding-top: 100px;
+      font-family: var(--contacts-font-family);
+      font-size: var(--contacts-title-font-size);
+      font-weight: var(--contacts-title-font-weight);
+      color: var(--contacts-font-color);
+    }
+    .contacts-hero__text {
+      padding-top: 10px;
+      font-family: var(--contacts-text-family);
+      font-size: var(--contacts-text-font-size);
+      font-weight: var(--contacts-text-font-weight);
+      color: var(--contacts-subtitle-color);
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .contacts-hero__container {
+      flex-direction: row;
+
+      .contacts-hero__title {
+        padding-top: 50px;
+        padding-right: 25%;
+        font-size: var(--contacts-desktop-title-font-size);
+      }
+      .contacts-hero__text {
+        padding-top: 50px;
+        padding-left: 15%;
+      }
+    }
+  }
+}

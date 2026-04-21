@@ -1,0 +1,139 @@
+.welcome-about-partial {
+  margin: 0 auto;
+  padding: 60px 15px;
+  box-sizing: border-box;
+  background: url(../../img/home/Welcome-background.png);
+  background-repeat: no-repeat;
+  background-position: center 50px;
+  background-size: 50%;
+}
+
+@media (min-width: 600px) {
+  .welcome-about-partial {
+    padding: 120px 0px;
+    background-position: center 120px;
+  }
+}
+
+.welcome-about__title {
+  font-family: var(--secondary-font);
+  font-size: 34px;
+  color: var(--color-gray-900);
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.welcome-about__description {
+  font-family: var(--font-main);
+  font-size: 17px;
+  color: var(--color-gray-500);
+  text-align: center;
+  padding: 0px 27px;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 25.5px;
+}
+
+.welcome-about__logo {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  color: var(--accent-color);
+  display: flex;
+  filter: brightness(0) saturate(100%) invert(81%) sepia(11%) saturate(3954%) hue-rotate(322deg) brightness(93%)
+    contrast(98%);
+}
+
+.welcome-about__stats {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: var(--font-main);
+  color: var(--color-gray-500);
+  padding: 50px 27px;
+  margin: 0px 15px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 2.4px;
+}
+
+.welcome-about__live-houses {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .welcome-about__live-houses {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.welcome-about__houses-icons {
+  width: 500px;
+  height: 50px;
+  margin-bottom: 17px;
+}
+
+.welcome-about__benefits {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px 15px 0px;
+  justify-content: center;
+  gap: 40px;
+}
+
+.welcome-about__benefits-h3 {
+  font-family: var(--secondary-font);
+  color: var(--color-gray-900);
+  padding: 20px 0px 0px;
+  font-weight: 600;
+}
+
+.welcome-about__benefits-p {
+  font-family: var(--font-main);
+  color: var(--color-gray-500);
+  padding: 20px;
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 25.5px;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+.welcome-about__benefits-img {
+  max-width: 100%;
+  height: auto;
+  width: 272px;
+  height: 170px;
+}
+
+.welcome-about__benefits-list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .welcome-about__benefits-list {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome-about__benefits-img {
+    width: 353px;
+    height: 220px;
+  }
+}
