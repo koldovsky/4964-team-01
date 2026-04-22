@@ -263,20 +263,63 @@
   }
 }
 
-/*
-@media (min-width: 768px) {
-  .discover-partial__promo-title {
-    font-size: 42px;
-    max-width: 500px;
+@media (min-width: 1024px) {
+  .discover-partial .discover-partial__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px; 
+    margin: 0 auto;
+    gap: 1px;
+    position: relative;
   }
 
-  .discover-partial__promo-text {
-    font-size: 18px;
-    max-width: 500px;
+  .discover-partial .discover-partial__media {
+    flex: 0 0 550px;
+  }
+  .discover-partial .discover-partial__media img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
-  .discover-partial__activity-list {
-    grid-template-columns: 1fr 1fr;
+  .discover-partial .discover-partial__content {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+    padding-top: 100px;
+  }
+
+  .discover-partial .discover-form__bg {
+    top: 0;
+    left: 55%;
+    margin: 0;
+    width: auto;
+    z-index: 1;
+  }
+
+  .discover-partial .discover-form__bg-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 150px; 
+    color: var(--discover-bg-color);
+    white-space: nowrap;
+    line-height: 0.8;
+  }
+
+  .discover-partial .discover-form__icon {
+    position: relative;
+    z-index: 3; 
+    width: 40px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  /* 5. Іконки в рядок */
+  .discover-partial .discover-partial__luxury {
+    flex-direction: row !important;
+    gap: 25px;
   }
 }
-  */
