@@ -1,30 +1,32 @@
-.history-section {
-  position: relative;
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 40px 60px;
+/* =========================================
+   Activity Carousel (About Us page)
+   Extends base .carousel component
+========================================= */
 
-  font-family: var(--about-font-body);
-
+.carousel--activity {
   border-top: 1px solid var(--about-divider-color);
   border-bottom: 1px solid var(--about-divider-color);
 }
 
-.swiper-slide {
+/* Slide content layout */
+.carousel--activity .carousel__slide {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 20px 10px;
 }
 
-.year {
+/* Year */
+.carousel--activity .carousel__year {
+  font-family: var(--about-font-body);
   color: var(--about-year-color);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.1em;
 }
 
-.title {
+/* Title */
+.carousel--activity .carousel__title {
   font-family: var(--about-font-heading);
   color: var(--about-text-primary);
 
@@ -36,7 +38,7 @@
   padding-bottom: 15px;
 }
 
-.title::after {
+.carousel--activity .carousel__title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -48,23 +50,26 @@
   background-color: var(--about-accent);
 }
 
-.description {
+/* Description */
+.carousel--activity .carousel__description {
   font-family: var(--about-font-body);
   color: var(--about-text-secondary);
-
   line-height: 1.6;
   font-size: 16px;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+/* Buttons color */
+.carousel--activity .carousel__btn {
   color: var(--about-button-bg);
-  width: 30px;
-  height: 30px;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 24px;
-  font-weight: bold;
+/* Icon */
+.carousel__icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.carousel__btn:hover .carousel__icon {
+  transform: scale(1.2);
 }

@@ -1,30 +1,36 @@
 /**
  * Main initialization function for the About Us page.
- * Triggered only after all HTMX partials are loaded.
+ * Runs after all HTMX partials are loaded.
  */
 async function init() {
-  // Import burger menu logic (self-executing script)
+  // Import burger menu logic (self-executing module)
   await import("../global.header-burger.js");
 
-  // Import carousel module and call its initialization function
-  const carouselModule = await import("./about-us-activity-carousel.js");
-  carouselModule.initActivityCarousel();
+  // Initialize all carousels on the page (universal component)
+  const carouselModule = await import("../components/carousel.js");
+  carouselModule.initCarousels();
+
+  // Initialize hero parallax effect
   const heroParallax = await import("./about-us-hero-parallax.js");
-heroParallax.initAboutUsHeroParallax();
+  heroParallax.initAboutUsHeroParallax();
 }
 
-// Calculate the total number of partials to be loaded via HTMX
-const totalPartials = document.querySelectorAll('[hx-trigger="load"], [data-hx-trigger="load"]').length;
+// === HTMX loading tracking ===
+
+// Count how many partials should be loaded
+const totalPartials = document.querySelectorAll(
+  '[hx-trigger="load"], [data-hx-trigger="load"]'
+).length;
 
 let loadedPartialsCount = 0;
 
 /**
- * Event listener that tracks HTMX loading progress.
+ * Track HTMX partial loading progress.
+ * When all partials are loaded — run init().
  */
 document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
 
-  // Once all partials are in the DOM, initialize page scripts
   if (loadedPartialsCount === totalPartials) {
     init();
   }
