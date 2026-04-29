@@ -4,7 +4,7 @@ export function initMap() {
 
   // Custom Map marker as SVG icon
   const customIcon = L.icon({
-    iconUrl: "../../img/icons/map-pin.svg",
+    iconUrl: "./img/icons/map-pin.svg",
     iconSize: [40, 40],
     iconAnchor: [20, 40],
     popupAnchor: [0, -40],
