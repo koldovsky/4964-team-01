@@ -164,6 +164,9 @@
       background-color: var(--services-button-color);
       color: var(--white-color);
     }
+    .services__image-container-button:hover {
+      background-color: var(--services-logo-color);
+    }
   }
 }
 
