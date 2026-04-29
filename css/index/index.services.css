@@ -152,11 +152,17 @@
       justify-content: center;
       padding: 15px 30px;
       gap: 10px;
+      width: 145px;
+      height: 50px;
+      border: 0;
+      color: white;
+      font-size: 13px;
+      font-family: Inter, sans-serif;
+      font-weight: 600;
+      margin-top: 30px;
+      text-decoration: none;
       background-color: var(--services-button-color);
       color: var(--white-color);
-      text-decoration: none;
-      font-weight: 700;
-      min-width: 146px;
     }
   }
 }
