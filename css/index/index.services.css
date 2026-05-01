@@ -199,13 +199,13 @@
   .services {
     .services__head-container {
       flex-direction: row;
-      justify-content: space-between;
+      /*justify-content: space-between;*/
       align-items: flex-start;
       gap: 40px;
     }
 
     .services__list-container {
-      max-width: 1024px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       flex-direction: row;
