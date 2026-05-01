@@ -219,8 +219,8 @@
   }
 
   .discover-partial__activity-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1px;
 
     list-style: none;
@@ -275,6 +275,7 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
+
 
       .discover-partial__content {
         .discover-partial__media {
@@ -333,6 +334,10 @@
           }
         }
       }
+    }
+
+    .discover-partial__activity-list {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

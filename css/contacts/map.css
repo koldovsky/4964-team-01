@@ -1,11 +1,7 @@
-.contacts__map {
+.contacts-map {
   position: relative;
 
-  .contacts__map-container {
+  .contacts-map__map {
     height: 50vh;
-    .contacts__map-map {
-      height: 50vh;
-      width: 100%;
-    }
   }
 }

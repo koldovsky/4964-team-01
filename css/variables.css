@@ -114,4 +114,16 @@
   --discover-link-color: rgb(124, 120, 47);
   --discover-description-color: rgb(128, 128, 128);
   /* End of Discover part */
+
+  /* Explore Canvas part */
+  --explore-canvas-back-color: white;
+  --explore-canvas-accent-color: #808080;
+  --explore-canvas-color-green: #7c782f;
+  --explore-canvas-line: rgb(231, 231, 219);
+  --explore-canvas-color-gray-900: #2d2d2d;
+  --explore-canvas-color-secondary: #808080;
+  --explore-canvas-color-accent: #ea9449;
+  /* End of Explore Canvas part */
+
+
 }
