@@ -1,5 +1,6 @@
 function init() {
   import("../global.header-burger.js");
+  import("./explore-canvas.js");
 }
 
 const totalPartials = document.querySelectorAll(

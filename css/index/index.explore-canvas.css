@@ -143,6 +143,11 @@
       margin-bottom: 15px;
     }
 
+    .explore-canvas__habitation--title:hover {
+      color: var(--explore-canvas-color-green);  
+      cursor: pointer;
+    }
+
     .explore-canvas__habitation--icons {
       display: flex;
       align-items: center;
@@ -205,5 +210,11 @@
       font-weight: 600;
       margin-top: 30px;
     }
+
+    .explore-canvas__btn:hover {
+      background-color: var(--explore-canvas-color-accent);
+      cursor: pointer;
+    }
+
   }
 }
