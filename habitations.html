@@ -3,25 +3,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Habitations | Hidden Heaven</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     />
-
-    <link rel="stylesheet" href="css/habiitations.css" />
+    <title>Habitations | Hidden Heaven</title>
+    <link rel="stylesheet" href="css/habitations.css" />
     <script src="./js/htmx.min.js"></script>
   </head>
   <body>
     <header class="header">
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header.partial.html"
+      ></nav>
     </header>
 
     <main class="habitations">
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="habitations.hero.partial.html"></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="habitations.hero.partial.html"
+      ></section>
 
       <section
         data-hx-trigger="load"
@@ -32,23 +36,23 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="habitations.special-offers.partial.html"
+        data-hx-get="habitations.carousel.partial.html"
       ></section>
 
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="habitations-carousel-bootstrap.html"
+        data-hx-get="habitations.special-offers.partial.html"
       ></section>
     </main>
 
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
 
-    <script src="js/index.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="/js/habitations/carousel.partial.js"></script>
+    <script src="/js/index/index.js"></script>
   </body>
 </html>

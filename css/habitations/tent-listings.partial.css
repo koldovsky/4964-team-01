@@ -143,6 +143,13 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       cursor: pointer;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    .tent-card__button:hover,
+    .tent-card__button:focus-visible {
+      background-color: var(--habitations-icons-color);
+      color: var(--habitations-text-primary-color);
     }
   }
 }
@@ -354,6 +361,13 @@
       text-transform: uppercase;
       letter-spacing: 0.08em;
       cursor: pointer;
+      transition: background-color 180ms ease, color 180ms ease;
+    }
+
+    .tent-card__button:hover,
+    .tent-card__button:focus-visible {
+      background-color: var(--habitations-icons-color);
+      color: var(--habitations-text-primary-color);
     }
   }
 }
