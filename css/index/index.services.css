@@ -10,13 +10,13 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 
     .services__title-group {
       display: flex;
       align-items: center;
       gap: 16px;
-      flex: 1;
+      
 
       .services__title-logo {
         color: var(--services-logo-color);
@@ -35,8 +35,8 @@
     .services__contact {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      flex: 0 0 auto;
+      gap: 8px;
+      /*flex: 0 0 auto;*/
       min-width: 240px;
 
       img {
@@ -194,6 +194,13 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .services__head-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
 
 @media (min-width: 1024px) {
   .services {
