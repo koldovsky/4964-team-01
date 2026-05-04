@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us | Hidden Heaven</title>
+    <link rel="icon" type="image/png" href="img/icons/icon.png" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
     <link rel="stylesheet" href="css/about-us.css" />
+    <link rel="stylesheet" href="css/components/carousel.css" />
     <link rel="stylesheet" href="css/about-us/about-us-activity-carousel.css" />
 
     <script src="./js/htmx.min.js"></script>
@@ -27,6 +28,13 @@
 
       <!--Khrystyna Chukur-->
       <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.experience.partial.html"></section>
+
+      <!-- Oleksandr Sydorskyi -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.video-section.partial.html"
+      ></section>
 
       <!-- Oleksandr Sydorskyi -->
       <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-activity-carousel.html"></section>
