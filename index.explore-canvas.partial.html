@@ -307,15 +307,26 @@
 
   <div class="explore-canvas-modal" aria-hidden="true">
     <div class="explore-canvas-modal__overlay" data-explore-canvas-close></div>
-    <div class="explore-canvas-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="explore-canvas-modal-title">
-      <button type="button" class="explore-canvas-modal__close" data-explore-canvas-close aria-label="Close reservation form">×</button>
+    <div
+      class="explore-canvas-modal__dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="explore-canvas-modal-title"
+    >
+      <button class="explore-canvas-modal__close" type="button" aria-label="Close modal" data-explore-canvas-close>
+        <span class="explore-canvas-modal__close-line"></span>
+        <span class="explore-canvas-modal__close-line"></span>
+      </button>
       <div class="explore-canvas-modal__header">
+        <img src="img/home/tree.svg" alt="tree" class="explore-canvas-modal__image" />
+      </div>
+      <!-- <div class="explore-canvas-modal__header">
         <span class="explore-canvas-modal__badge">Reservation Form</span>
         <h2 id="explore-canvas-modal-title" class="explore-canvas-modal__title">Secure your glamping stay</h2>
         <p class="explore-canvas-modal__text">
           Ready to embark on your glamping adventure? Complete the reservation details below and send a request.
         </p>
-      </div>
+      </div> -->
       <form class="explore-canvas-modal__form" action="/submit" method="post">
         <label class="explore-canvas-modal__field">
           <span class="explore-canvas-modal__label">Your Name*</span>
@@ -342,11 +353,24 @@
         <div class="explore-canvas-modal__row">
           <label class="explore-canvas-modal__field">
             <span class="explore-canvas-modal__label">Number of Adults*</span>
-            <input class="explore-canvas-modal__input" type="number" name="adults" min="1" placeholder="Number of Adults*" required />
+            <input
+              class="explore-canvas-modal__input"
+              type="number"
+              name="adults"
+              min="1"
+              placeholder="Number of Adults*"
+              required
+            />
           </label>
           <label class="explore-canvas-modal__field">
             <span class="explore-canvas-modal__label">Number of Children</span>
-            <input class="explore-canvas-modal__input" type="number" name="children" min="0" placeholder="Number of Children" />
+            <input
+              class="explore-canvas-modal__input"
+              type="number"
+              name="children"
+              min="0"
+              placeholder="Number of Children"
+            />
           </label>
         </div>
         <label class="explore-canvas-modal__checkbox">
