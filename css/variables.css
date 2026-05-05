@@ -125,5 +125,19 @@
   --explore-canvas-color-accent: #ea9449;
   /* End of Explore Canvas part */
 
+  /* Prices part */
+  --prices-font-color: rgb(255, 255, 255);
+  --prices-font-family: "Inter", sans-serif;
+  --prices-title-font-size: 2.1rem;
+  --prices-desktop-title-font-size: 3rem;
+  --prices-title-font-weight: 700;
+  --prices-subtitle-color: rgba(255, 255, 255, 0.7);
+  --prices-text-color: rgba(0, 0, 0, 0.7);
+  --prices-text-family: "Inter", sans-serif;
+  --prices-text-font-size: 1.2rem;
+  --prices-text-font-weight: 500;
+  --prices-social-icon-color: rgb(234, 148, 73);
+  --prices-map-bg-color: rgb(45, 45, 45);
 
+  /* End of Prices part */
 }
