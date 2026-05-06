@@ -1,43 +1,48 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <title>Hidden Heaven</title>
-    <link rel="icon" type="image/png" href="img/icons/icon.png" />
 
-    <script src="./js/htmx.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/index.css" />
+  <title>Hidden Heaven</title>
+  <link rel="icon" type="image/png" href="img/icons/icon.png" />
 
-  <body>
-    <!-- global.header + index.hero section / Sofia Hrebeniuk -->
-    <header class="header">
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
-    </header>
+  <script src="./js/htmx.min.js"></script>
+</head>
 
-    <main class="main">
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.hero.partial.html"></section>
-      <!-- Welcome / Mariia Belyn-->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.welcome.partial.html"></section>
+<body>
+  <!-- global.header + index.hero section / Sofia Hrebeniuk -->
+  <header class="header">
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
+  </header>
 
-      <!-- Anastasiia Boiko-->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.explore-canvas.partial.html"
-      ></section>
+  <main class="main">
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.hero.partial.html"></section>
+    <!-- Welcome / Mariia Belyn-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.welcome.partial.html"></section>
 
-      <!-- Olia Pazyniuk -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.discover.partial.html"></section>
+    <!-- Anastasiia Boiko-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.explore-canvas.partial.html"></section>
 
-      <!-- Andrii Prymak -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.services.partial.html"></section>
-      <!-- Oksana Motovylova -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.prices.partial.html"></section>
-    </main>
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+    <!-- Olia Pazyniuk -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.discover.partial.html"></section>
 
-    <script src="js/index/index.js"></script>
-  </body>
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.video-section.partial.html">
+    </section>
+    <section id="testimonials" data-hx-trigger="load" data-hx-swap="innerHTML" data-hx-get="testimonials-carousel.html">
+    </section>
+
+    <!-- Andrii Prymak -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.services.partial.html"></section>
+
+    <!-- Oksana Motovylova -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.prices.partial.html"></section>
+  </main>
+  <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+
+  <script src="js/index/index.js"></script>
+</body>
+
 </html>

@@ -1,51 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us | Hidden Heaven</title>
-    <link rel="icon" type="image/png" href="img/icons/icon.png" />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/about-us.css" />
-    <link rel="stylesheet" href="css/components/carousel.css" />
-    <link rel="stylesheet" href="css/about-us/about-us-activity-carousel.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Hidden Heaven</title>
+  <link rel="icon" type="image/png" href="img/icons/icon.png" />
 
-    <script src="./js/htmx.min.js"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/about-us.css" />
+  <link rel="stylesheet" href="css/components/carousel.css" />
+  <link rel="stylesheet" href="css/about-us/about-us-activity-carousel.css" />
 
-  <body>
-    <header class="header">
-      <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
-    </header>
+  <script src="./js/htmx.min.js"></script>
+</head>
 
-    <main class="main">
-      <!-- Oleksandr Sydorskyi -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.hero.partial.html"></section>
+<body>
+  <header class="header">
+    <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
+  </header>
 
-      <!-- Oleksandr Sydorskyi -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.partial.html"></section>
+  <main class="main">
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.hero.partial.html"></section>
 
-      <!--Khrystyna Chukur-->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.experience.partial.html"></section>
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.partial.html"></section>
 
-      <!-- Oleksandr Sydorskyi -->
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="about-us.video-section.partial.html"
-      ></section>
+    <!--Khrystyna Chukur-->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.experience.partial.html"></section>
 
-      <!-- Oleksandr Sydorskyi -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-activity-carousel.html"></section>
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us.video-section.partial.html">
+    </section>
 
-      <!-- Oleksandr Sydorskyi -->
-      <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-events.partial.html"></section>
-    </main>
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-activity-carousel.html"></section>
 
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+    <!-- Oleksandr Sydorskyi -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="about-us-events.partial.html"></section>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/about-us/about-us.js" defer></script>
-  </body>
+  <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.footer.partial.html"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/about-us/about-us.js" defer></script>
+</body>
+
 </html>
