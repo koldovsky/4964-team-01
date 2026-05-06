@@ -8,3 +8,7 @@
 @import url("./index/index.welcome.css");
 @import url("./index/index.services.css");
 @import url("./index/index.discover.css");
+@import url("./index/index.prices.css");
+@import url("./about-us/about-us.video-section.partial.css");
+@import url("./index/index.testimonials.css");
+@import url("./components/carousel.css");
