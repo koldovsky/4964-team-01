@@ -1,15 +1,17 @@
 <!-- Khrystyna Chukur -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="js/gallery.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Experience</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
   <section class="experience">
     <div class="experience__container container">
       <!-- Upper Section: Features -->
@@ -136,25 +138,73 @@
           </p>
         </div>
 
-        <div class="gallery__grid">
-          <img src="img/experience/activity-image-1.webp" alt="Activity image 1" />
-          <img src="img/experience/activity-image-2.webp" alt="Activity image 2" />
-          <img src="img/experience/activity-image-3.webp" alt="Activity image 3" />
-          <img src="img/experience/activity-image-4.webp" alt="Activity image 4" />
-          <img src="img/experience/activity-image-5.webp" alt="Activity image 5" />
-          <img src="img/experience/activity-image-6.webp" alt="Activity image 6" />
-        </div>
-        <div class="gallery__modal" id="gallery-modal">
-          <button class="gallery__close">&times;</button>
+<div class="gallery">
+  <button class="gallery__item" type="button" data-gallery-index="0" aria-label="Open gallery photo 1">
+    <img src="img/experience/activity-image-1.webp" alt="Outdoor dining at night" />
+  </button>
 
-          <button class="gallery__arrow gallery__arrow--left">&#10094;</button>
+  <button class="gallery__item" type="button" data-gallery-index="1" aria-label="Open gallery photo 2">
+    <img src="img/experience/activity-image-2.webp" alt="Couple next to a campfire" />
+  </button>
 
-          <img class="gallery__modal-image" src="" alt="Preview" />
+  <button class="gallery__item" type="button" data-gallery-index="2" aria-label="Open gallery photo 3">
+    <img src="img/experience/activity-image-3.webp" alt="Tented campsite near trees" />
+  </button>
 
-          <button class="gallery__arrow gallery__arrow--right">&#10095;</button>
-        </div>
+  <button class="gallery__item" type="button" data-gallery-index="3" aria-label="Open gallery photo 4">
+    <img src="img/experience/activity-image-4.webp" alt="Breakfast on the meadow" />
+  </button>
+
+  <button class="gallery__item" type="button" data-gallery-index="4" aria-label="Open gallery photo 5">
+    <img src="img/experience/activity-image-5.webp" alt="Sunset over the lake" />
+  </button>
+
+  <button class="gallery__item" type="button" data-gallery-index="5" aria-label="Open gallery photo 6">
+    <img src="img/experience/activity-image-6.webp" alt="Forest trail and tents" />
+  </button>
+</div>
+
+<div class="gallery-modal" hidden aria-hidden="true">
+  <div class="gallery-modal__overlay" data-gallery-close></div>
+  <div class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="gallery-modal__close" type="button" aria-label="Close gallery viewer">
+      <span aria-hidden="true">×</span>
+    </button>
+
+    <div class="gallery-modal__content">
+      <div class="gallery-modal__slide gallery-modal__slide--active">
+        <img src="img/experience/activity-image-1.webp" alt="Outdoor dining at night" />
+      </div>
+      <div class="gallery-modal__slide">
+        <img src="img/experience/activity-image-2.webp" alt="Couple next to a campfire" />
+      </div>
+      <div class="gallery-modal__slide">
+        <img src="img/experience/activity-image-3.webp" alt="Tented campsite near trees" />
+      </div>
+      <div class="gallery-modal__slide">
+        <img src="img/experience/activity-image-4.webp" alt="Breakfast on the meadow" />
+      </div>
+      <div class="gallery-modal__slide">
+        <img src="img/experience/activity-image-5.webp" alt="Sunset over the lake" />
+      </div>
+      <div class="gallery-modal__slide">
+        <img src="img/experience/activity-image-6.webp" alt="Forest trail and tents" />
+      </div>
+    </div>
+
+    <button class="gallery-modal__btn gallery-modal__btn--prev" type="button" aria-label="Previous photo">
+      ‹
+    </button>
+    <button class="gallery-modal__btn gallery-modal__btn--next" type="button" aria-label="Next photo">
+      ›
+    </button>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
+
+</body>
 </html>
 

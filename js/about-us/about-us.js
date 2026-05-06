@@ -13,6 +13,9 @@ async function init() {
   // Initialize hero parallax effect
   const heroParallax = await import("./about-us-hero-parallax.js");
   heroParallax.initAboutUsHeroParallax();
+
+  const galleryModule = await import("./about-us-gallery.js");
+  galleryModule.initAboutUsGallery();
 }
 
 // === HTMX loading tracking ===
