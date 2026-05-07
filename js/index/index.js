@@ -4,6 +4,7 @@ function init() {
   import("../habitations/carousel.partial.js");
   import("../components/carousel.js").then(({ initCarousels }) => {
     initCarousels();
+  
   });
 }
 
