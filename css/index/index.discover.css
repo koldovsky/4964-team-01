@@ -216,23 +216,43 @@
 
   .discover-partial__activities {
     margin-top: 60px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-btn {
+      background: var(--discover-border-bottom-color);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+    }
   }
 
   .discover-partial__activity-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    width: 400%;
+    transition: transform 0.4s ease;
+    position: relative;
   }
 
   .discover-partial__activity {
+    flex: 0 0 25%;
+    max-width: 25%;
+
     margin-top: 25px;
     display: flex;
     align-items: flex-start;
     gap: 20px;
+
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .discover-partial__activity img {
@@ -275,7 +295,6 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
-
 
       .discover-partial__content {
         .discover-partial__media {
@@ -334,10 +353,6 @@
           }
         }
       }
-    }
-
-    .discover-partial__activity-list {
-      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
