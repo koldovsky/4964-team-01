@@ -239,7 +239,6 @@
 .explore-canvas-modal__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 15, 20, 0.52);
 }
 
 .explore-canvas-modal__dialog {
@@ -285,7 +284,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* 
 .explore-canvas-modal__close {
   position: absolute;
   top: 5px;
@@ -319,15 +317,9 @@
   font-weight: 700;
 }
 
-.explore-canvas-modal__badge::before {
-  content: "↑↑";
-  display: block;
-  line-height: 1;
-}
-
 .explore-canvas-modal__title {
-  margin: 0 0 14px;
-  font-size: 34px;
+  margin: 0 0 10px;
+  font-size: 25px;
   letter-spacing: -0.04em;
   color: var(--color-dark);
 }
@@ -336,14 +328,14 @@
   margin: 0 auto;
   max-width: 480px;
   color: var(--explore-canvas-color-secondary);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.8;
 }
 
 .explore-canvas-modal__form {
   display: grid;
   gap: 16px;
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 .explore-canvas-modal__field {
@@ -364,10 +356,9 @@
 
 .explore-canvas-modal__input {
   width: 100%;
-  min-height: 56px;
+  min-height: 30px;
   padding: 16px 18px;
   border: none;
-  border-radius: 16px;
   font-family: Inter, sans-serif;
   font-size: 15px;
   color: var(--color-dark);
@@ -380,7 +371,7 @@
 }
 
 .explore-canvas-modal__input:focus {
-  outline: 2px solid rgba(137, 121, 36, 0.18);
+  outline: 1px solid rgba(137, 121, 36, 0.18);
   outline-offset: 2px;
 }
 
@@ -408,9 +399,8 @@
 
 .explore-canvas-modal__submit {
   width: 100%;
-  min-height: 56px;
+  min-height: 40px;
   border: none;
-  border-radius: 16px;
   background-color: var(--explore-canvas-color-green);
   color: white;
   text-transform: uppercase;
@@ -437,4 +427,4 @@
   .explore-canvas-modal__title {
     font-size: 28px;
   }
-} */
+}
