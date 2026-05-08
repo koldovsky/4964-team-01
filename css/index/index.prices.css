@@ -55,5 +55,54 @@
       word-spacing: 1px;
       color: var(--prices-text-color);
     }
+
+    .prices__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-self: left;
+      gap: 15px;
+
+      .prices__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 5px;
+
+        .prices__item-title {
+          font-family: var(--prices-font-family);
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+
+        .prices__item-text {
+          font-family: var(--prices-font-family);
+          font-weight: 600;
+          font-size: 0.8rem;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: rgba(45, 45, 45, 0.5);
+        }
+
+        .prices__item-money {
+          color: var(--prices-number-color);
+        }
+
+        .prices__item-free {
+          font-family: var(--prices-font-family);
+          font-weight: 600;
+          font-size: 0.8rem;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: var(--prices-social-icon-color);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .prices {
+    flex-direction: row;
   }
 }
